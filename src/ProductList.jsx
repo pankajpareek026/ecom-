@@ -11,7 +11,7 @@ export default function ProductList() {
 
 
     const getProducts = async () => { // to geting all products displayed inside table
-        let result = await fetch('http://localhost:6500/products', {
+        let result = await fetch('https://gorgeous-lion-attire.cyclic.app/products', {
             headers: {
                 authorization: JSON.parse(localStorage.getItem('token')),
                 user: JSON.parse(localStorage.getItem('user'))._id
@@ -36,7 +36,7 @@ export default function ProductList() {
     const searchHandle = async (e) => {
         const key = e.target.value
         if (key) {
-            let searchResult = await fetch(`http://localhost:6500/search/${e.target.value}`, {
+            let searchResult = await fetch(`https://gorgeous-lion-attire.cyclic.app/search/${e.target.value}`, {
                 headers: {
                     authorization: JSON.parse(localStorage.getItem('token')),
                     user: JSON.parse(localStorage.getItem('user'))._id
@@ -60,7 +60,7 @@ export default function ProductList() {
         let permision = window.confirm("Delete Transaction")
         if (permision) {
 
-            let result = await fetch(`http://localhost:6500/products/${id}`, {
+            let result = await fetch(`https://gorgeous-lion-attire.cyclic.app/products/${id}`, {
                 method: "delete",
 
             })
