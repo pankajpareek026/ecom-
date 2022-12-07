@@ -11,7 +11,7 @@ const Update = () => {
     const [company, SetCompany] = React.useState("")
     const [err, SetError] = React.useState(false)
     const GetData = async () => {
-        let singleData = await fetch(`http://localhost:6500/products/${params.id}`)
+        let singleData = await fetch(`https://gorgeous-lion-attire.cyclic.app/${params.id}`)
         singleData = await singleData.json()
         console.log(singleData.name)
         Setname(singleData.name)
@@ -38,7 +38,7 @@ const Update = () => {
         else {
             console.log(name, price, category, company)
 
-            let result = await fetch("http://localhost:6500/update", {
+            let result = await fetch("https://gorgeous-lion-attire.cyclic.app/update", {
                 method: "PUT",
                 body: JSON.stringify({ name, price, category, company, _id: params.id }),
                 headers: { 'content-Type': 'application/json' }
