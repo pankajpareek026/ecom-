@@ -23,7 +23,7 @@ const navigate=useNavigate()  ;
             return false;
         }
 
-        let result = await fetch("http://localhost:6500/add-product", {
+        let result = await fetch("https://gorgeous-lion-attire.cyclic.app/add-product", {
             method: "POST",
             body: JSON.stringify({ name, price, category, quantity, company, userId }),
             headers: {
