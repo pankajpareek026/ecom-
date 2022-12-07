@@ -1,0 +1,264 @@
+body {
+
+  font-family: fantasy;
+}
+
+.nav {
+  width: 100vw;
+  display: inline-flex;
+  margin-top: 0px;
+  box-shadow: 0px 1px 0px wheat;
+  box-shadow: 0px 2px 5px gray;
+}
+
+.nav-ul {
+  width: auto;
+  display: inline-flex;
+  padding: 0px;
+
+
+}
+
+.nav-ul li {
+  list-style: none;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.nav-ul li a {
+  padding: 10px;
+  color: purple;
+  text-decoration: none;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 900;
+}
+
+.logo {
+  width: 110px;
+  float: left;
+  border-radius: 3px;
+  margin-left: 5px;
+  height: 90px;
+}
+
+.nav-ul li a:hover {
+  border-bottom: 2px ridge purple;
+  border-radius: 5px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding: 5px;
+  width: 100%;
+  background-color: purple;
+  color: white;
+}
+
+.signup,
+.login,
+.add {
+  display: block;
+  padding: 10px;
+  margin-top: 25px;
+  margin-left: 30%;
+  border: 2px solid grey;
+  width: 355px;
+  height: auto;
+  box-shadow: 2px 2px 3px gray, -2px -2px 3px gray;
+  border-radius: 10px;
+}
+
+.add h3 {
+  text-align: center;
+  font-size: xx-large;
+  border-bottom: 2px solid purple;
+  margin: 3px;
+  padding: 5px;
+}
+
+
+.add button {
+  background-color: purple;
+  color: white;
+  font-weight: 'PT Sans', sans-serif;
+  height: 44px;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+}
+
+.input-box,
+.add input {
+  padding: 10px;
+  margin: 5px;
+  display: block;
+  margin-top: 15px;
+  width: 320px;
+  border: none;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  height: 25px;
+  font-size: medium;
+  letter-spacing: 1px;
+  outline: none;
+
+}
+
+.add select {
+  padding: 10px;
+  margin: 5px;
+  display: block;
+  margin-top: 15px;
+  width: 340px;
+  border: none;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  height: 44px;
+  font-size: medium;
+  letter-spacing: 1px;
+  outline: none;
+}
+
+.add select option {
+  height: 30px;
+  padding: 5px;
+}
+
+.signup-btn,
+.add button {
+  height: 45px;
+  margin: 5px;
+  margin-top: 15px;
+  width: 350px;
+  padding: 5px;
+  background-color: purple;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 900;
+  word-wrap: 10px;
+  letter-spacing: 0.5px;
+  font-size: large;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 5px gray, -2px -2px 5px grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.signup-btn:hover,
+.login button:hover,
+.add button:hover {
+  cursor: pointer;
+
+
+}
+
+.signup-head,
+.add h3 {
+  text-align: center;
+  font-size: larger;
+  border-bottom: 1px solid purple;
+  padding: 10px;
+  margin-top: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: xx-large;
+}
+.product-list{
+  font-family: 'PT Sans';
+  text-align: center;
+margin-top: 50px;
+}
+.product-list table {
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: 5%;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
+}
+
+.product-list h2{
+  color: purple;
+  text-transform: capitalize;
+  font-size: xx-large;
+  /* border: 1px solid black; */
+  box-shadow: 2px 0px 5px grey;
+  border-radius: 2px;
+  width: auto;
+  padding: 5px;
+  margin-left: 5%;
+  margin-bottom: 15px;
+  margin-right: 5%;
+  
+}
+.product-list table tr td{
+  padding: 7px 12px;
+}
+.search-box{
+  border: 2px solid;
+  margin-bottom:15px;
+  width: 50%;
+  padding: 5px 15px;
+height: 45px;
+font-size: large;
+border-radius: 10px;
+}
+.product-list table tr td:hover{
+color: purple;
+cursor: pointer;
+font-weight: 900;
+}
+.product-list table tr td button{
+  background-color: purple;
+  padding: 3px 7px;
+  font-family: 'PT Sans', sans-serif;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product-list table tr:last-child{
+  margin-bottom: 50px;
+}
+
+.product-list table tr th{
+padding: 7px 15px;
+font-size: x-large;
+background-color: purple;
+color: white;
+
+}
+
+.product-list table tr th:first-child{
+  border-radius: 10px 0px 0px 0px;
+}
+.product-list table tr th:last-child{
+  border-radius: 0px 10px 0px 0px;
+}
+
+
+
+.add input {
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+.invalid-input {
+  color: red;
+  font-family: 'PT Sans', sans-serif;
+  margin-left: 7px;
+  font-weight: bold;
+  display: block;
+  margin-top: 0px;
+
+
+}
+
+.add select {
+  border: 2px solid;
+  border-radius: 5px;
+  width: 342px;
+  height: 48px;
+}
