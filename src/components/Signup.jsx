@@ -14,7 +14,7 @@ export default function Signup() {
     })
     const colletData = async () => {
         // alert(`${name} , ${email} , ${password}`)
-        let result = await fetch('http://localhost:6500/register', {
+        let result = await fetch('https://gorgeous-lion-attire.cyclic.app/register', {
             method: "POST",
             body: JSON.stringify({ name, email, password }),
             headers: {
