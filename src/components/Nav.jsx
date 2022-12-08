@@ -17,7 +17,7 @@ export default function Nav() {
             {auth ? <ul className='nav-ul' >
                 <li> <Link to="/">Products</Link> </li>
                 <li> <Link to="/add">Add Product</Link> </li>
-                <li> <Link to="/update">Update</Link> </li>
+                
                
                 <li className='align-right'> <Link to="/signup" onClick={logout} >Logout  [ {JSON.parse(auth).name} ]</Link> </li>
             </ul>
