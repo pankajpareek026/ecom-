@@ -1,18 +1,28 @@
 body {
-
+  padding: 0;
+  margin: 0;
   font-family: fantasy;
+  width: auto;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.app {
+  width: 100%;
 }
 
 .nav {
-  width: 100vw;
+  width: calc(100vw+10px);
   display: inline-flex;
   margin-top: 0px;
-  box-shadow: 0px 1px 0px wheat;
   box-shadow: 0px 2px 5px gray;
+  margin: 0;
 }
 
+
+
 .nav-ul {
-  width: auto;
+  width: 100vw;
   display: inline-flex;
   padding: 0px;
 
@@ -48,11 +58,13 @@ body {
 
 .footer {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   padding: 5px;
-  width: 100%;
+  width: 101%;
+  height: 100px;
   background-color: purple;
   color: white;
+  font-size: medium;
 }
 
 .signup,
@@ -165,11 +177,13 @@ body {
   font-family: 'PT Sans', sans-serif;
   font-size: xx-large;
 }
-.product-list{
+
+.product-list {
   font-family: 'PT Sans';
   text-align: center;
-margin-top: 50px;
+  margin-top: 50px;
 }
+
 .product-list table {
   text-align: center;
   border-collapse: collapse;
@@ -179,62 +193,69 @@ margin-top: 50px;
   box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
 }
 
-.product-list h2{
+.product-list h2 {
   color: purple;
   text-transform: capitalize;
   font-size: xx-large;
   /* border: 1px solid black; */
-  box-shadow: 2px 0px 5px grey;
+  /* box-shadow: 2px 0px 5px grey; */
   border-radius: 2px;
   width: auto;
   padding: 5px;
   margin-left: 5%;
   margin-bottom: 15px;
   margin-right: 5%;
-  
+
 }
-.product-list table tr td{
+
+.product-list table tr td {
   padding: 7px 12px;
 }
-.search-box{
+
+.search-box {
   border: 2px solid;
-  margin-bottom:15px;
+  margin-bottom: 15px;
   width: 50%;
   padding: 5px 15px;
-height: 45px;
-font-size: large;
-border-radius: 10px;
+  height: 45px;
+  font-size: large;
+  border-radius: 10px;
 }
-.product-list table tr td:hover{
-color: purple;
-cursor: pointer;
-font-weight: 900;
+
+.product-list table tr td:hover {
+  color: purple;
+  cursor: pointer;
+  font-weight: 900;
 }
-.product-list table tr td button{
+
+.product-list table tr td button {
   background-color: purple;
   padding: 3px 7px;
   font-family: 'PT Sans', sans-serif;
   color: white;
   font-weight: 500;
   border-radius: 5px;
+  margin-right: 5px;
   cursor: pointer;
 }
-.product-list table tr:last-child{
+
+.product-list table tr td .product-list table tr:last-child {
   margin-bottom: 50px;
 }
 
-.product-list table tr th{
-padding: 7px 15px;
-font-size: x-large;
-background-color: purple;
-color: white;
+.product-list table tr th {
+  padding: 7px 15px;
+  font-size: x-large;
+  background-color: purple;
+  color: white;
 
 }
 
-.product-list table tr th:first-child{
+.product-list table tr th:first-child {
   border-radius: 10px 0px 0px 0px;
 }
-.product-list table tr th:last-child{
+
+.product-list table tr th:last-child {
   border-radius: 0px 10px 0px 0px;
 }
 
@@ -261,4 +282,105 @@ color: white;
   border-radius: 5px;
   width: 342px;
   height: 48px;
+}
+
+@media (max-width:360px) {
+  .app {
+    overflow-x: hidden;
+  }
+
+  .nav {
+    width: calc(100vw+10px);
+    height: auto;
+  }
+
+  .signup,
+  .login,
+  .signup {
+    display: block;
+    padding: 10px;
+    border: 2px solid grey;
+    width: 90vw;
+    margin-left: 1.3vw;
+    height: auto;
+    box-shadow: 2px 2px 3px gray, -2px -2px 3px gray;
+    border-radius: 10px;
+    margin-top: 25px;
+  }
+
+  .input-box {
+    width: 85vw;
+  }
+
+
+  .footer {
+    display: none;
+  }
+
+  .product-list {
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+
+  .product-list table {
+
+    width: 98%;
+    font-size: xx-small;
+    margin-bottom: 20px;
+    margin-left: 2px;
+  }
+
+  .product-list table tr th {
+    font-size: smaller;
+  }
+
+  .product-list h2 {
+    width: 100vw;
+    margin-left: 0px;
+    font-size: medium;
+    margin-top: 0;
+  }
+
+  .product-list table tr td {
+    padding: 2px;
+  }
+
+  .product-list table tr td a {
+    font-size: xx-small;
+    padding: 2px;
+  }
+
+  .product-list table tr td button {
+    padding: 1px;
+  }
+
+  .signup-btn,
+  .add button {
+    width: 85vw;
+  }
+
+  .nav-ul {
+    width: auto;
+  }
+
+  .nav-ul li {
+    padding: 1vw;
+    margin: 1vw;
+    font-size: smaller;
+  }
+
+  .nav-ul li a {
+    font-size: x-small;
+  }
+
+  .logo {
+    width: 50px;
+    float: left;
+    border-radius: 3px;
+    margin-left: 5px;
+    height: 90px;
+  }
+  .search-box {
+    width: 80vw;
+  }
 }
