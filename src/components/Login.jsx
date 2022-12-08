@@ -15,7 +15,7 @@ const Login = () => {
     const [password, Setpassword] = React.useState("")
     const loginHandle = async () => {
         // console.log(email,password)
-        let result = await fetch('https://gorgeous-lion-attire.cyclic.app/login', {
+        let result = await fetch('http://localhost:6500/login', {
             method: "post",
             body: JSON.stringify({ email, password }),
             headers: { "content-Type": "application/json" }
@@ -28,7 +28,8 @@ const Login = () => {
             navigate("/")
         }
         else {
-
+            swal(`${result.result}`, "", "error")
+            console.log(result.result)
         }
 
     }
